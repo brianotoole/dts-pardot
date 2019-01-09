@@ -87,7 +87,7 @@ a {
     max-width: 55%;
     margin: rem(200) auto rem(60);
     @include bp_md {
-      margin: 0;
+      margin: 0 0 rem(60);
       padding-right: rem(15);
       max-width: 95%;
     }
