@@ -29,41 +29,40 @@
   }
 
   &__logo { 
-    width: 1em;
-    height: 1em;
-    font-size: 100px;
-    margin: 0 auto;
-    background: url('../img/logo.svg') center center no-repeat;
-    background-size: 100%;
+    width: 200px;
+    height: 45px;
+    margin: 0;
+    background: url('../img/logo.png') 0 0 no-repeat;
   }
 
   &__content {
     position: relative;
-    top: 60%;
-    transform: translateY(-60%);
+    top: 0;
     left: 0;
-    text-align: center;
-    color: $color__white;
+    margin: 0;
+    padding-top: rem(90);
+    color: $color__primary;
     z-index: 10;
-    @include bp_md {
-      margin: 0 auto;
-      max-width: 65%;
+    &--narrow {
+      @include bp_md {
+        max-width: 50%;
+      }
     }
   }
 
   &__title {
     font-weight: 300;
-    font-size: 30px; 
-    color: $color__white;
-    margin-bottom: 10px;
+    font-size: rem(26); 
+    padding-top: rem(60);
+    padding-bottom: rem(30);
     @include bp_md {
-      font-size: rem(58);
+      font-size: rem(30);
     }
   }
 
   &__subtitle {
-    font-weight: 100;
     margin: 0;
+    color: $color__white;
   }
 
   &__btn-container {
