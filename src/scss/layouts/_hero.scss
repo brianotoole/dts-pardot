@@ -3,8 +3,13 @@
 *********************************************************/
 .hero {
   position: relative;
-  height: 550px;
-  //background: url('../img/bg-brick.png') 0 0 repeat;
+  width: 100%;
+  height: 750px;
+
+  &--has-img {
+    background: url('../img/bg-hero.png') 0 0 no-repeat;
+    background-size: cover;
+  }
 
   &--has-overlay {
     &:after {
@@ -40,9 +45,12 @@
     top: 0;
     left: 0;
     margin: 0;
-    padding-top: rem(90);
+    padding-top: rem(30);
     color: $color__primary;
     z-index: 10;
+    @include bp_md {
+      padding-top: rem(90);
+    }
     &--narrow {
       @include bp_md {
         max-width: 50%;
@@ -52,12 +60,13 @@
 
   &__title {
     font-weight: 300;
-    font-size: rem(26); 
+    font-size: rem(32); 
     font-weight: bold;
-    padding-top: rem(60);
+    padding-top: rem(45);
     padding-bottom: rem(30);
     @include bp_md {
-      font-size: rem(30);
+      padding-top: rem(75);
+      font-size: rem(42);
     }
   }
 

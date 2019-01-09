@@ -37,18 +37,18 @@ a {
   max-width: 100%;
   margin-left: auto;
   margin-right: auto;
-  padding-left: 15px;
-  padding-right: 15px;
+  padding-left: rem(30);
+  padding-right: rem(30);
   overflow: hidden;
   @include bp_md {
-    padding-left: 90px;
-    padding-right: 90px;
+    padding-left: rem(90);
+    padding-right: rem(90);
   }
 }
 
 .page-section {
-  padding-top: 30px;
-  padding-bottom: 30px;
+  padding-top: rem(30);
+  padding-bottom: rem(30);
   
   &--primary {
     color: white;
