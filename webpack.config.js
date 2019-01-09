@@ -56,7 +56,7 @@ module.exports = {
       notify: false, // hide the notification
       host: 'localhost',
       port: 3000,
-      proxy: 'http://localhost/bem-webpack-boiler',
+      proxy: 'http://localhost/datis-pardot',
       files: [
             '**/*.html'
         ]

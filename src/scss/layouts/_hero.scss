@@ -14,14 +14,14 @@
       bottom: 0;
       left: 0;
       width: 100%;
-      background: rgba($color-secondary, 0.6);
+      background: rgba($color__secondary, 0.6);
       z-index: 1;
     }
   }
 
   &--bg-gradient {
-    background-color: $color-secondary;
-    background-image: linear-gradient(120deg, $color-secondary, $color-secondary-dark);
+    background-color: $color__secondary;
+    background-image: linear-gradient(120deg, $color__secondary, $color__secondary--dark);
   }
 
   &__background-image {
@@ -43,7 +43,7 @@
     transform: translateY(-60%);
     left: 0;
     text-align: center;
-    color: $color-white;
+    color: $color__white;
     z-index: 10;
     @include bp_md {
       margin: 0 auto;
@@ -54,7 +54,7 @@
   &__title {
     font-weight: 300;
     font-size: 30px; 
-    color: $color-white;
+    color: $color__white;
     margin-bottom: 10px;
     @include bp_md {
       font-size: rem(58);

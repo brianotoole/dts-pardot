@@ -5,18 +5,37 @@
 /*********************************************************
     Colors
 *********************************************************/
-$color-primary: #c60813;
-$color-secondary: #7c9091;
-$color-white: #ffffff;
-$color-body: #222;
+// color names
+$orange: #ea8c2a;
+$blue:   #323a45;
+$l-blue: #bfe0f7;
+$gold:   #fdbf29;
+$navy:   #1a2940;
+$white:  #ffffff;
+$black:  #111111;
+$grey:   #cfcfcf;
+$l-grey: #e6e6e6;
+$red:    #ff3434;
+$green:    green;
 
-$color-primary-dark: darken($color-primary, 15%);
-$color-secondary-dark: darken($color-secondary, 15%);
-$color-white-dark: darken($color-white, 15%);
+// brand colors
+$color__primary:     $orange;
+$color__secondary:   $blue;
+$color__tertiary:    $navy;
+$color__accent:      $l-blue;
+$color__body:        $black;
+$color__border:      $grey;
+$color__white:       $white;
+$color__grey:        $l-grey; 
+$color-success:      $green;
+$color-error:        $red;
 
-$color-border-base: rgba($color-body, 0.2);
-$color-success: green;
-$color-error: red;
+// brand colors--darkens
+$color__primary--dark: darken($color__primary, 7%);
+$color__secondary--dark: darken($color__secondary, 7%);
+$color__tertiary--dark: darken($color__tertiary, 7%);
+$color__body--dark: darken($color__body, 7%);
+$color__border--dark: darken($color__border, 7%);
 
 /*********************************************************
     Typography

@@ -11,8 +11,8 @@ html {
 }
 
 body {
-  background: #fff;
-  color: $color-body;
+  background: $color__white;
+  color: $color__body;
   font-family: $font-body;
   font-size: $font-base-font-size;
   font-weight: 300;
@@ -26,10 +26,10 @@ img {
 
 a {
   text-decoration: none;
-  color: $color-primary;
+  color: $color__primary;
   transition: 0.2s color ease-out;
   &:hover {
-    color: $color-primary-dark;
+    color: $color__primary--dark;
   }
 }
 
@@ -53,17 +53,17 @@ a {
   
   &--primary {
     color: white;
-    background-color: $color-primary;
+    background-color: $color__primary;
   }
 
   &--secondary {
     color: white;
-    background-color: $color-secondary;
+    background-color: $color__secondary;
   }
 
   &--white {
     color: black;
-    background-color: $color-white;
+    background-color: $color__white;
   }
 
   &--black {
