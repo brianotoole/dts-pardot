@@ -51,8 +51,27 @@
   }
 
   a {
+    position: relative;
     color: $color__white;
-    margin: 0 rem(10);
+    overflow: hidden;
+    transform: perspective(1px) translateZ(0);
+    position: relative;
+    overflow: hidden;
+    &:before {
+      content: "";
+      position: absolute;
+      z-index: -1;
+      left: 51%;
+      right: 51%;
+      bottom: 0;
+      background: $color__white;
+      height: 2px;
+      transition: left 0.3s ease-out, right 0.3s ease-out;
+    }
+    &:hover:before {
+      left: 0;
+      right: 0;
+    }
   }
 
 }

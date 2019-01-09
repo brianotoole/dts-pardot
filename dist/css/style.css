@@ -657,8 +657,26 @@ p {
       .footer__address {
         margin-bottom: 1.25rem; } }
   .footer a {
+    position: relative;
     color: #ffffff;
-    margin: 0 0.625rem; }
+    overflow: hidden;
+    -webkit-transform: perspective(1px) translateZ(0);
+            transform: perspective(1px) translateZ(0);
+    position: relative;
+    overflow: hidden; }
+    .footer a:before {
+      content: "";
+      position: absolute;
+      z-index: -1;
+      left: 51%;
+      right: 51%;
+      bottom: 0;
+      background: #ffffff;
+      height: 2px;
+      transition: left 0.3s ease-out, right 0.3s ease-out; }
+    .footer a:hover:before {
+      left: 0;
+      right: 0; }
 
 /*********************************************************
     Hero
