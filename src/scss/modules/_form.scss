@@ -24,15 +24,15 @@ input[type='url'],
 textarea {
     display: inline-block;
     width: 100%;
-    height: rem(45);
-    line-height: rem(45);
-    margin-bottom: rem(18);
+    height: rem(55);
+    line-height: rem(55);
+    margin-bottom: rem(20);
     padding: 0 rem(10);
     font-family: inherit;
     font-size: 1rem;
     color: $color__body;
     border: 1px solid $color__border--dark;
-    border-radius: 0;
+    border-radius: 4px;
     box-shadow: inset 0 1px 2px rgba(10, 10, 10, .1);
     outline: none;
     transition: 0.2s all ease-out;
@@ -47,7 +47,7 @@ textarea {
 }
 
 .form {
-    &__btn-container {
+    &__btn-container--right {
         @include bp_md {
             float: right;
         }

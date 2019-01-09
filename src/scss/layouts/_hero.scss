@@ -4,7 +4,7 @@
 .hero {
   position: relative;
   width: 100%;
-  height: 750px;
+  height: 765px;
   margin: 0;
   padding-top: rem(30);
   color: $color__white;
@@ -14,8 +14,10 @@
   }
 
   &--has-img {
-    background: url('../img/bg-hero.png') 0 0 no-repeat;
+    background-image: url('../img/bg-hero.png');
+    background-repeat: no-repeat;
     background-size: cover;
+    background-position: 0 -100px;
   }
 
   &--has-overlay {
@@ -48,15 +50,18 @@
   }
 
   &__content {
-    color: $color__primary;
+    @include bp_md {
+      width: 65%;
+    }
   }
 
   &__title {
+    padding-top: rem(45);
+    padding-bottom: rem(30);
     font-weight: 300;
     font-size: rem(32); 
     font-weight: bold;
-    padding-top: rem(45);
-    padding-bottom: rem(30);
+    color: $color__primary;
     @include bp_md {
       padding-top: rem(75);
       font-size: rem(42);
@@ -67,8 +72,29 @@
     margin: 0;
   }
 
-  &__btn-container {
-    margin-top: 20px;
+  &__form {
+    margin-bottom: rem(10);
+    padding: rem(20) rem(15);
+    border-radius: 8px;
+    color: $color__body;
+    background: $color__white;
+    box-shadow: 0 0 20px rgba($color__black, 0.25);
+    .form__btn-container {
+      padding-top: rem(15);
+    }
+    a {
+      color: $color__white;
+      text-transform: uppercase;
+      font-size: font-scale(1);
+      font-weight: bold;
+    }
+    small {
+      display: inline-block;
+      padding-top: rem(30);
+    }
+    small span {
+      color: $color__primary;
+    }
   }
 
 }
