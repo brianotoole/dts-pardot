@@ -5,8 +5,14 @@
 .footer {
   display: flex;
   align-items: center;
+  text-align: center;
   padding-top: rem(20);
   padding-bottom: rem(20);
+  font-size: rem(13);
+  @include bp_md {
+    font-size: font-scale(0);
+    text-align: left;
+  }
 
   &--secondary {
     background-color: $color__secondary;

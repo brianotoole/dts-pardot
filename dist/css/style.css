@@ -624,8 +624,14 @@ p {
 .footer {
   display: flex;
   align-items: center;
+  text-align: center;
   padding-top: 1.25rem;
-  padding-bottom: 1.25rem; }
+  padding-bottom: 1.25rem;
+  font-size: 0.8125rem; }
+  @media (min-width: 1025px) {
+    .footer {
+      font-size: 1rem;
+      text-align: left; } }
   .footer--secondary {
     background-color: #1a2940;
     color: #ffffff; }
