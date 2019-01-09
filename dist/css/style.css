@@ -255,7 +255,7 @@ a {
     background-color: #ea8c2a; }
   .page-section--secondary {
     color: white;
-    background-color: #323a45; }
+    background-color: #1a2940; }
   .page-section--white {
     color: black;
     background-color: #ffffff; }
@@ -263,18 +263,20 @@ a {
     color: white;
     background-color: black; }
 
-.interior-content img {
-  display: block;
-  max-width: 65%;
-  margin: 0 auto 3.75rem; }
-  @media (min-width: 1025px) {
-    .interior-content img {
-      padding-right: 0.9375rem;
-      max-width: 95%; } }
-
-.interior-content h2, .interior-content h3, .interior-content h4, .interior-content h5, .interior-content h6 {
-  margin-bottom: 1.875rem;
-  font-weight: bold; }
+.interior-content {
+  margin: 0 auto 1.875rem; }
+  .interior-content img {
+    display: block;
+    max-width: 55%;
+    margin: 12.5rem auto 3.75rem; }
+    @media (min-width: 1025px) {
+      .interior-content img {
+        margin: 0;
+        padding-right: 0.9375rem;
+        max-width: 95%; } }
+  .interior-content h2, .interior-content h3, .interior-content h4, .interior-content h5, .interior-content h6 {
+    margin-bottom: 1.875rem;
+    font-weight: bold; }
 
 /*********************************************************
     Typography
@@ -327,10 +329,10 @@ p {
     color: #ffffff;
     background-color: #db7a16; }
   .btn--secondary {
-    background-color: #323a45;
-    border-color: #323a45; }
+    background-color: #1a2940;
+    border-color: #1a2940; }
     .btn--secondary:hover, .btn--secondary:focus {
-      background-color: #232930; }
+      background-color: #101927; }
   .btn--muted {
     color: #ea8c2a;
     background-color: transparent;
@@ -625,7 +627,7 @@ p {
   padding-top: 1.25rem;
   padding-bottom: 1.25rem; }
   .footer--secondary {
-    background-color: #323a45;
+    background-color: #1a2940;
     color: #ffffff; }
   .footer--has-border-top {
     border-top: 1px solid #ea8c2a; }
@@ -678,11 +680,11 @@ p {
     bottom: 0;
     left: 0;
     width: 100%;
-    background: rgba(50, 58, 69, 0.6);
+    background: rgba(26, 41, 64, 0.6);
     z-index: 1; }
   .hero--bg-gradient {
-    background-color: #323a45;
-    background-image: linear-gradient(120deg, #323a45, #232930); }
+    background-color: #1a2940;
+    background-image: linear-gradient(120deg, #1a2940, #101927); }
   .hero__background-image {
     height: 100%; }
   .hero__logo {
@@ -705,7 +707,10 @@ p {
         padding-top: 4.6875rem;
         font-size: 2.625rem; } }
   .hero__subtitle {
-    margin: 0; }
+    margin-bottom: 1.875rem; }
+    @media (min-width: 1025px) {
+      .hero__subtitle {
+        margin: 0; } }
   .hero__form {
     margin-bottom: 0.625rem;
     padding: 1.25rem 0.9375rem;

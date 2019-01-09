@@ -69,7 +69,10 @@
   }
 
   &__subtitle {
-    margin: 0;
+    margin-bottom: rem(30);
+    @include bp_md {
+      margin: 0;
+    }
   }
 
   &__form {

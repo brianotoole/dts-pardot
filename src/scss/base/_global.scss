@@ -81,11 +81,13 @@ a {
 }
 
 .interior-content {
+  margin: 0 auto rem(30);
   img {
     display: block;
-    max-width: 65%;
-    margin: 0 auto rem(60);
+    max-width: 55%;
+    margin: rem(200) auto rem(60);
     @include bp_md {
+      margin: 0;
       padding-right: rem(15);
       max-width: 95%;
     }
