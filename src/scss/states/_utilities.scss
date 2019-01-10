@@ -102,14 +102,14 @@
     */
     $i: 0;
     @while $i <= 50 {
-      .u-mt-#{$i} { margin-top: calc-em(1px * $i); }
-      .u-mb-#{$i} { margin-bottom: calc-em(1px * $i); }
-      .u-ml-#{$i} { margin-left: calc-em(1px * $i); }
-      .u-mr-#{$i} { margin-right: calc-em(1px * $i); }
+      .u-mt-#{$i} { margin-top: rem(1px * $i); }
+      .u-mb-#{$i} { margin-bottom: rem(1px * $i); }
+      .u-ml-#{$i} { margin-left: rem(1px * $i); }
+      .u-mr-#{$i} { margin-right: rem(1px * $i); }
       
-      .u-pt-#{$i} { padding-top: calc-em(1px * $i); }
-      .u-pb-#{$i} { padding-bottom: calc-em(1px * $i); }
-      .u-pl-#{$i} { padding-left: calc-em(1px * $i); }
-      .u-pr-#{$i} { padding-right: calc-em(1px * $i); }
+      .u-pt-#{$i} { padding-top: rem(1px * $i); }
+      .u-pb-#{$i} { padding-bottom: rem(1px * $i); }
+      .u-pl-#{$i} { padding-left: rem(1px * $i); }
+      .u-pr-#{$i} { padding-right: rem(1px * $i); }
       $i: $i + 1;
     }
