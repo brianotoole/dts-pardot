@@ -9,9 +9,11 @@
   padding-top: rem(30);
   color: $color__white;
   z-index: 10;
-  @include bp_md {
-    height: calc(100vh - 71px);
-    padding-top: rem(90);
+
+  &--full-height {
+    @include bp_md {
+      height: calc(100vh - 71px);
+    }
   }
 
   &--pad-top-0 {
@@ -33,7 +35,7 @@
     min-height: 430px;
     @include bp_md {
       min-height: auto;
-      background-position: 0 -100px;
+      background-position: 0 100%;
     }
   }
 

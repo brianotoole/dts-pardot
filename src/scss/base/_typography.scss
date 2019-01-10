@@ -46,7 +46,7 @@ ul {
     max-width: 60%;
     margin: rem(60) auto;
     @include bp_md {
-      margin: 0 0 rem(60);
+      margin: rem(60) 0;
       padding-right: rem(15);
       max-width: 95%;
     }

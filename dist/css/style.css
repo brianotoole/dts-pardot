@@ -303,7 +303,7 @@ ul {
     margin: 3.75rem auto; }
     @media (min-width: 1025px) {
       .interior-content img {
-        margin: 0 0 3.75rem;
+        margin: 3.75rem 0;
         padding-right: 0.9375rem;
         max-width: 95%; } }
   .interior-content h2, .interior-content h3, .interior-content h4, .interior-content h5, .interior-content h6 {
@@ -559,9 +559,8 @@ ul {
   color: #ffffff;
   z-index: 10; }
   @media (min-width: 1025px) {
-    .hero {
-      height: calc(100vh - 71px);
-      padding-top: 5.625rem; } }
+    .hero--full-height {
+      height: calc(100vh - 71px); } }
   .hero--pad-top-0 {
     padding-top: 0; }
   .hero--pad-btm-phone {
@@ -578,7 +577,7 @@ ul {
     @media (min-width: 1025px) {
       .hero--has-img {
         min-height: auto;
-        background-position: 0 -100px; } }
+        background-position: 0 100%; } }
   .hero--has-overlay:after {
     content: '';
     position: absolute;
