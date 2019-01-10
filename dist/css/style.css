@@ -263,25 +263,6 @@ a {
     color: white;
     background-color: black; }
 
-.interior-content {
-  margin: 0 auto 1.875rem; }
-  .interior-content img {
-    display: block;
-    max-width: 55%;
-    margin: 12.5rem auto 3.75rem; }
-    @media (min-width: 1025px) {
-      .interior-content img {
-        margin: 0 0 3.75rem;
-        padding-right: 0.9375rem;
-        max-width: 95%; } }
-  .interior-content h2, .interior-content h3, .interior-content h4, .interior-content h5, .interior-content h6 {
-    margin-bottom: 1.875rem;
-    font-weight: bold; }
-
-ul {
-  list-style-type: disc;
-  padding-left: 1.25rem; }
-
 /*********************************************************
     Typography
 *********************************************************/
@@ -308,7 +289,26 @@ h6 {
   font-size: 1rem; }
 
 p {
-  margin: 0 0 1.25rem 0; }
+  margin: 0 0 1.875rem 0; }
+
+ul {
+  list-style-type: disc;
+  padding-left: 1.25rem; }
+
+.interior-content {
+  margin: 0 auto 1.875rem; }
+  .interior-content img {
+    display: block;
+    max-width: 55%;
+    margin: 12.5rem auto 3.75rem; }
+    @media (min-width: 1025px) {
+      .interior-content img {
+        margin: 0 0 3.75rem;
+        padding-right: 0.9375rem;
+        max-width: 95%; } }
+  .interior-content h2, .interior-content h3, .interior-content h4, .interior-content h5, .interior-content h6 {
+    margin-bottom: 1.875rem;
+    font-weight: bold; }
 
 /*********************************************************
     Buttons
@@ -580,22 +580,25 @@ p {
     z-index: 1; }
   .hero--flex {
     display: flex;
-    width: 100%; }
+    flex-wrap: wrap; }
   .hero__l {
-    width: 100%;
+    flex-basis: 100%;
     background-image: url(../../dist/img/bg-hero-no-shape.png);
     background-repeat: no-repeat;
-    background-size: 140%; }
+    background-size: cover; }
+    @media (min-width: 769px) {
+      .hero__l {
+        background-size: 140%; } }
     @media (min-width: 1025px) {
       .hero__l {
-        width: 66.666666%; } }
+        flex-basis: 66.666666%; } }
   .hero__r {
     width: 100%;
-    padding-left: 0.9375rem;
-    padding-right: 0.9375rem; }
+    padding-left: 1.875rem;
+    padding-right: 1.875rem; }
     @media (min-width: 1025px) {
       .hero__r {
-        width: 33.333333%;
+        flex-basis: 33.333333%;
         height: 100%;
         display: flex;
         align-items: center;
@@ -632,7 +635,10 @@ p {
     .hero__content--lg {
       width: 88%; } }
   .hero__content--pad-top {
-    padding-top: 1.875rem; }
+    padding-bottom: 3.75rem; }
+    @media (min-width: 1025px) {
+      .hero__content--pad-top {
+        padding-top: 1.875rem; } }
   .hero__content--white * {
     color: #ffffff !important; }
   .hero__title {
@@ -646,8 +652,10 @@ p {
       .hero__title {
         padding-top: 4.6875rem;
         font-size: 2.625rem; } }
+    .hero__title--pad-btm-0 {
+      padding-bottom: 0; }
   .hero__cat {
-    padding-top: 1.875rem;
+    padding-top: 2.8125rem;
     padding-bottom: 0.9375rem;
     font-weight: bold; }
   .hero__subtitle {

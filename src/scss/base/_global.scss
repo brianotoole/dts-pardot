@@ -79,26 +79,3 @@ a {
   }
 
 }
-
-.interior-content {
-  margin: 0 auto rem(30);
-  img {
-    display: block;
-    max-width: 55%;
-    margin: rem(200) auto rem(60);
-    @include bp_md {
-      margin: 0 0 rem(60);
-      padding-right: rem(15);
-      max-width: 95%;
-    }
-  }
-  h2, h3, h4, h5, h6 {
-    margin-bottom: rem(30);
-    font-weight: bold;
-  }
-}
-
-ul {
-  list-style-type: disc;
-  padding-left: rem(20);
-}

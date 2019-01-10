@@ -40,25 +40,28 @@
 
   &--flex {
     display: flex;
-    width: 100%;
+    flex-wrap: wrap;
   }
 
   &__l {
-    width: 100%;
+    flex-basis: 100%;
     background-image: url('../img/bg-hero-no-shape.png');
     background-repeat: no-repeat;
-    background-size: 140%;
+    background-size: cover;
+    @include bp_sm {
+      background-size: 140%;
+    }
     @include bp_md {
-      width: 66.666666%;
+      flex-basis: 66.666666%;
     }
   }
 
   &__r {
     width: 100%;
-    padding-left: rem(15);
-    padding-right: rem(15);
+    padding-left: rem(30);
+    padding-right: rem(30);
     @include bp_md {
-      width: 33.333333%;
+      flex-basis: 33.333333%;
       height: 100%;
       display: flex;
       align-items: center;
@@ -110,7 +113,10 @@
       }
     }
     &--pad-top {
-      padding-top: rem(30);
+      padding-bottom: rem(60);
+      @include bp_md {
+        padding-top: rem(30);
+      }
     }
     &--white {
       * {
@@ -130,10 +136,13 @@
       padding-top: rem(75);
       font-size: rem(42);
     }
+    &--pad-btm-0 {
+      padding-bottom: 0;
+    }
   }
 
   &__cat {
-    padding-top: rem(30);
+    padding-top: rem(45);
     padding-bottom: rem(15);
     font-weight: bold;
   }
