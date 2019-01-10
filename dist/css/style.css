@@ -549,14 +549,20 @@ p {
 .hero {
   position: relative;
   width: 100%;
-  height: calc(100vh - 71px);
+  height: auto;
   margin: 0;
   padding-top: 1.875rem;
   color: #ffffff;
   z-index: 10; }
   @media (min-width: 1025px) {
     .hero {
+      height: calc(100vh - 71px);
       padding-top: 5.625rem; } }
+  .hero--pad-top-small {
+    padding-top: 0.9375rem; }
+    @media (min-width: 1025px) {
+      .hero--pad-top-small {
+        padding-top: 2.8125rem; } }
   .hero--has-img {
     background-image: url(../../dist/img/bg-hero.png);
     background-repeat: no-repeat;
@@ -575,11 +581,14 @@ p {
     position: absolute;
     top: 0;
     left: 0;
-    width: 81vw;
+    width: 100%;
     height: 100%;
     background-image: url(../../dist/img/bg-hero-no-shape.png);
     background-repeat: no-repeat;
     background-size: cover; }
+    @media (min-width: 1025px) {
+      .hero__bg {
+        width: 81vw; } }
   .hero--bg-gradient {
     background-color: #1a2940;
     background-image: linear-gradient(120deg, #1a2940, #101927); }
@@ -595,6 +604,8 @@ p {
   @media (min-width: 1025px) {
     .hero__content {
       width: 65%; } }
+  .hero__content--white * {
+    color: #ffffff !important; }
   .hero__title {
     padding-top: 2.8125rem;
     padding-bottom: 1.875rem;
@@ -611,6 +622,11 @@ p {
     @media (min-width: 1025px) {
       .hero__subtitle {
         margin: 0; } }
+  .hero__form-title {
+    color: #111111;
+    font-weight: bold;
+    padding-top: 1.875rem;
+    padding-bottom: 0.9375rem; }
   .hero__form {
     margin-bottom: 0.625rem;
     padding: 1.875rem 1.25rem;
@@ -618,6 +634,11 @@ p {
     color: #111111;
     background: #ffffff;
     box-shadow: 0 0 20px rgba(17, 17, 17, 0.25); }
+    .hero__form--pad-0 {
+      padding: 0; }
+    .hero__form--shadow-0 {
+      box-shadow: none;
+      background: transparent; }
     .hero__form .form__btn-container {
       padding-top: 0.9375rem; }
     .hero__form a {
@@ -681,6 +702,43 @@ textarea {
   textarea:focus,
   textarea:active {
     border-color: #ea8c2a; }
+  .form--small input[type='email'], .form--small
+  input[type='number'], .form--small
+  input[type='password'], .form--small
+  input[type='search'], .form--small
+  input[type='tel'], .form--small
+  input[type='text'], .form--small
+  input[type='url'], .form--small
+  textarea {
+    height: 2.8125rem;
+    line-height: 2.8125rem;
+    margin-bottom: 0.625rem; }
+  .form--dark input[type='email'], .form--dark
+  input[type='number'], .form--dark
+  input[type='password'], .form--dark
+  input[type='search'], .form--dark
+  input[type='tel'], .form--dark
+  input[type='text'], .form--dark
+  input[type='url'], .form--dark
+  textarea {
+    background: #e6e6e6;
+    border-width: 0; }
+    .form--dark input[type='email']:focus, .form--dark input[type='email']:active, .form--dark
+    input[type='number']:focus, .form--dark
+    input[type='number']:active, .form--dark
+    input[type='password']:focus, .form--dark
+    input[type='password']:active, .form--dark
+    input[type='search']:focus, .form--dark
+    input[type='search']:active, .form--dark
+    input[type='tel']:focus, .form--dark
+    input[type='tel']:active, .form--dark
+    input[type='text']:focus, .form--dark
+    input[type='text']:active, .form--dark
+    input[type='url']:focus, .form--dark
+    input[type='url']:active, .form--dark
+    textarea:focus, .form--dark
+    textarea:active {
+      border: 1px solid #ea8c2a; }
 
 textarea {
   max-width: 100%; }

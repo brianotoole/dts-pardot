@@ -39,6 +39,19 @@ textarea {
     &:active {
         border-color: $color__primary;
     }
+    .form--small & {
+      height: rem(45);
+      line-height: rem(45);
+      margin-bottom: rem(10);
+    }
+    .form--dark & {
+      background: $color__grey;
+      border-width: 0;
+      &:focus,
+      &:active {
+          border: 1px solid $color__primary;
+      }
+    }
 }
 
 textarea {

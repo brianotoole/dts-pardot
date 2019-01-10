@@ -4,13 +4,21 @@
 .hero {
   position: relative;
   width: 100%;
-  height: calc(100vh - 71px);
+  height: auto;
   margin: 0;
   padding-top: rem(30);
   color: $color__white;
   z-index: 10;
   @include bp_md {
+    height: calc(100vh - 71px);
     padding-top: rem(90);
+  }
+
+  &--pad-top-small {
+    padding-top: rem(15);
+    @include bp_md {
+      padding-top: rem(45);
+    }
   }
 
   &--has-img {
@@ -37,11 +45,14 @@
     position: absolute;
     top: 0;
     left: 0;
-    width: 81vw;
+    width: 100%;
     height: 100%;
     background-image: url('../img/bg-hero-no-shape.png');
     background-repeat: no-repeat;
     background-size: cover;
+    @include bp_md {
+      width: 81vw;
+    }
   }
 
   &--bg-gradient {
@@ -67,6 +78,11 @@
     @include bp_md {
       width: 65%;
     }
+    &--white {
+      * {
+        color: $color__white!important;
+      }
+    }
   }
 
   &__title {
@@ -89,6 +105,13 @@
     }
   }
 
+  &__form-title {
+    color: $color__body;
+    font-weight: bold;
+    padding-top: rem(30);
+    padding-bottom: rem(15);
+  }
+
   &__form {
     margin-bottom: rem(10);
     padding: rem(30) rem(20);
@@ -96,6 +119,13 @@
     color: $color__body;
     background: $color__white;
     box-shadow: 0 0 20px rgba($color__black, 0.25);
+    &--pad-0 {
+      padding: 0;
+    }
+    &--shadow-0 {
+      box-shadow: none;
+      background: transparent;
+    }
     .form__btn-container {
       padding-top: rem(15);
     }
