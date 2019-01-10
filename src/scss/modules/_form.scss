@@ -40,9 +40,14 @@ textarea {
         border-color: $color__primary;
     }
     .form--small & {
-      height: rem(45);
-      line-height: rem(45);
-      margin-bottom: rem(10);
+      height: rem(55);
+      line-height: rem(55);
+      margin-bottom: rem(20);
+      @include bp_md {
+        height: rem(45);
+       line-height: rem(45);
+        margin-bottom: rem(10);
+      }
     }
     .form--dark & {
       background: $color__grey;
@@ -59,6 +64,10 @@ textarea {
 }
 
 .form {
+  padding-bottom: rem(30);
+  @include bp_md {
+    padding-bottom: 0;
+  }
     &__btn-container--right {
         @include bp_md {
             float: right;

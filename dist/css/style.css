@@ -751,9 +751,21 @@ textarea {
   input[type='text'], .form--small
   input[type='url'], .form--small
   textarea {
-    height: 2.8125rem;
-    line-height: 2.8125rem;
-    margin-bottom: 0.625rem; }
+    height: 3.4375rem;
+    line-height: 3.4375rem;
+    margin-bottom: 1.25rem; }
+    @media (min-width: 1025px) {
+      .form--small input[type='email'], .form--small
+      input[type='number'], .form--small
+      input[type='password'], .form--small
+      input[type='search'], .form--small
+      input[type='tel'], .form--small
+      input[type='text'], .form--small
+      input[type='url'], .form--small
+      textarea {
+        height: 2.8125rem;
+        line-height: 2.8125rem;
+        margin-bottom: 0.625rem; } }
   .form--dark input[type='email'], .form--dark
   input[type='number'], .form--dark
   input[type='password'], .form--dark
@@ -784,9 +796,14 @@ textarea {
 textarea {
   max-width: 100%; }
 
-@media (min-width: 1025px) {
-  .form__btn-container--right {
-    float: right; } }
+.form {
+  padding-bottom: 1.875rem; }
+  @media (min-width: 1025px) {
+    .form {
+      padding-bottom: 0; } }
+  @media (min-width: 1025px) {
+    .form__btn-container--right {
+      float: right; } }
 
 .form__input--success {
   border-color: green !important; }
