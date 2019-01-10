@@ -17,12 +17,24 @@
   &--pad-top-0 {
     padding-top: 0;
   }
+  
+  &--pad-btm-phone {
+    padding-bottom: rem(60);
+    @include bp_md {
+      padding-bottom: 0;
+    }
+  }
 
   &--has-img {
     background-image: url('../img/bg-hero.png');
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: 0 -100px;
+    background-position: 0 0;
+    min-height: 430px;
+    @include bp_md {
+      min-height: auto;
+      background-position: 0 -100px;
+    }
   }
 
   &--has-overlay {
@@ -113,7 +125,8 @@
       }
     }
     &--pad-top {
-      padding-bottom: rem(60);
+      padding-top: rem(30);
+      padding-bottom: rem(90);
       @include bp_md {
         padding-top: rem(30);
       }
@@ -163,11 +176,16 @@
 
   &__form {
     margin-bottom: rem(10);
-    padding: rem(30) rem(20);
+    padding-left: 0;
+    padding-right: 0;
     border-radius: 8px;
     color: $color__body;
     background: $color__white;
-    box-shadow: 0 0 20px rgba($color__black, 0.25);
+    box-shadow: none;
+    @include bp_md {
+      padding: rem(30) rem(20);
+      box-shadow: 0 0 20px rgba($color__black, 0.25);
+    }
     &--pad-0 {
       padding: 0;
     }
@@ -193,4 +211,18 @@
     }
   }
 
+}
+
+.bg-shape {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('../img/bg-shape.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  @include bp_md {
+    width: 81vw;
+  }
 }

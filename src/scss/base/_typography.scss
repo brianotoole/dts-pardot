@@ -7,7 +7,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-  font-size: font-scale(6);
+  font-size: font-scale(7);
 }
 
 h2 {
@@ -40,11 +40,11 @@ ul {
 }
 
 .interior-content {
-  margin: 0 auto rem(30);
+  margin: 0 auto;
   img {
     display: block;
-    max-width: 55%;
-    margin: rem(200) auto rem(60);
+    max-width: 60%;
+    margin: rem(60) auto;
     @include bp_md {
       margin: 0 0 rem(60);
       padding-right: rem(15);

@@ -1,0 +1,115 @@
+/*********************************************************
+    Utilities
+*********************************************************/
+
+  .u-visible-desktop {
+    display: none !important;
+    @media (min-width: $bp_md) { display: block !important; }
+  }
+  
+  .u-hidden-desktop {
+    @media (min-width: $bp_md) { display: none !important; }
+  }
+  
+  .u-hidden-phone {
+    @media (max-width: $bp_sm) { display: none !important; }
+  }
+  
+  .u-hidden-sm {
+    @media (max-width: $bp_sm) { display: none !important; }
+  }
+  
+  .u-width-sm {
+    max-width: auto;
+    @media (min-width: $bp_sm) { 
+      max-width: 30%;
+    }
+  }
+  
+  .u-flex-center {
+    display: flex;
+    align-items: center;
+  }
+  
+  .u-text-center {
+    text-align: center !important;
+  }
+  
+  .u-text-right {
+    text-align: right !important;
+  }
+  
+  .u-text-larger {
+    font-size: 1.2em !important;
+    line-height: 1.7;
+  }
+  
+  .u-re-li {
+    padding: 0;
+    list-style: none;
+  }
+  
+  .u-text-bold {
+    font-weight: bold;
+  }
+  
+  .u-text-upper {
+    text-transform: uppercase;
+  }
+  
+  .u-text-lower {
+    text-transform: lowercase;
+  }
+  
+  .u-color-white {
+    color: #ffffff !important;
+  }
+  
+  .u-color-primary {
+    color: $color__primary !important;
+  }
+  
+  .u-color-link {
+    color: $color__secondary !important;
+  }
+  
+  .u-color-secondary {
+    color: $color__secondary !important;
+  }
+  
+  .u-color-text {
+    color: $color__body!important;
+  }
+
+  
+  .u-pad {
+    padding-top: 2em;
+    padding-bottom: 2em;
+  }
+  
+  .u-pad-top {
+    padding-top: 2em;
+  }
+  
+  .u-visible {visibility: visible;}
+  .u-hidden {visibility: hidden;}
+  
+  
+  /**
+    * Margins & Paddings
+    * USAGE: u-mt-10 == margin-top: calc-em(10px);
+    * RESET: u-mt-0 == resets to 0
+    */
+    $i: 0;
+    @while $i <= 50 {
+      .u-mt-#{$i} { margin-top: calc-em(1px * $i); }
+      .u-mb-#{$i} { margin-bottom: calc-em(1px * $i); }
+      .u-ml-#{$i} { margin-left: calc-em(1px * $i); }
+      .u-mr-#{$i} { margin-right: calc-em(1px * $i); }
+      
+      .u-pt-#{$i} { padding-top: calc-em(1px * $i); }
+      .u-pb-#{$i} { padding-bottom: calc-em(1px * $i); }
+      .u-pl-#{$i} { padding-left: calc-em(1px * $i); }
+      .u-pr-#{$i} { padding-right: calc-em(1px * $i); }
+      $i: $i + 1;
+    }
