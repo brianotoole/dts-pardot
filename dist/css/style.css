@@ -278,6 +278,10 @@ a {
     margin-bottom: 1.875rem;
     font-weight: bold; }
 
+ul {
+  list-style-type: disc;
+  padding-left: 1.25rem; }
+
 /*********************************************************
     Typography
 *********************************************************/
@@ -558,11 +562,8 @@ p {
     .hero {
       height: calc(100vh - 71px);
       padding-top: 5.625rem; } }
-  .hero--pad-top-small {
-    padding-top: 0.9375rem; }
-    @media (min-width: 1025px) {
-      .hero--pad-top-small {
-        padding-top: 2.8125rem; } }
+  .hero--pad-top-0 {
+    padding-top: 0; }
   .hero--has-img {
     background-image: url(../../dist/img/bg-hero.png);
     background-repeat: no-repeat;
@@ -577,6 +578,29 @@ p {
     width: 100%;
     background: rgba(26, 41, 64, 0.6);
     z-index: 1; }
+  .hero--flex {
+    display: flex;
+    width: 100%; }
+  .hero__l {
+    width: 100%;
+    background-image: url(../../dist/img/bg-hero-no-shape.png);
+    background-repeat: no-repeat;
+    background-size: 140%; }
+    @media (min-width: 1025px) {
+      .hero__l {
+        width: 66.666666%; } }
+  .hero__r {
+    width: 100%;
+    padding-left: 0.9375rem;
+    padding-right: 0.9375rem; }
+    @media (min-width: 1025px) {
+      .hero__r {
+        width: 33.333333%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        padding-left: 2.8125rem;
+        padding-right: 2.8125rem; } }
   .hero__bg {
     position: absolute;
     top: 0;
@@ -604,6 +628,11 @@ p {
   @media (min-width: 1025px) {
     .hero__content {
       width: 65%; } }
+  @media (min-width: 1025px) {
+    .hero__content--lg {
+      width: 88%; } }
+  .hero__content--pad-top {
+    padding-top: 1.875rem; }
   .hero__content--white * {
     color: #ffffff !important; }
   .hero__title {
@@ -617,6 +646,10 @@ p {
       .hero__title {
         padding-top: 4.6875rem;
         font-size: 2.625rem; } }
+  .hero__cat {
+    padding-top: 1.875rem;
+    padding-bottom: 0.9375rem;
+    font-weight: bold; }
   .hero__subtitle {
     margin-bottom: 1.875rem; }
     @media (min-width: 1025px) {
